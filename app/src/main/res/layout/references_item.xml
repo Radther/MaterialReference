@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder_reference"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/reference_title_tv"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_sections"
+        android:id="@+id/no_sections_tv"
+        android:layout_below="@+id/reference_title_tv"
+        android:layout_marginLeft="32dp"
+        android:textColor="@color/secondary_text"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/ic_star_outline_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divider_shape"
+        android:layout_below="@id/no_sections_tv"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MaterialReference</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Placeholder nonsense-->
+    <string name="refs">REFs</string>
+    <string name="placeholder_title">Java QuickReference</string>
+    <string name="placeholder_author">Tom Singleton</string>
+    <string name="placeholder_number">42</string>
+    <string name="placeholder_desc">Basic Java syntax and structure guide</string>
+    <string name="title_activity_referenes">ReferenesActivity</string>
+    <string name="title">Title</string>
+    <string name="placeholder_reference">IF ELSE Statements</string>
+    <string name="no_sections">3 sections</string>
+    <string name="description">Description</string>
+    <string name="title_activity_cheat_card">CheatCardActivity</string>
+    <string name="cheatcard_placeholder_title">IF Statement</string>
+    <string name="cheatcard_placeholder_content">Use if to specify a block of code to be executed, if a specified condition is true. </string>
+    <string name="cheatcard_placeholder_codeblock">if (statement == true) {\n\t\t\t\tcode.doSomething();\n}</string>
+    <string name="title_activity_create_card">CreateCardActivity</string>
+
+</resources>

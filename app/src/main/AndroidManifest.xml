@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ink.designdev.materialreference" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".screens.GuideSheetActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".screens.MatRefActivity"
+            android:label="@string/title_activity_referenes" >
+        </activity>
+        <activity
+            android:name=".screens.CheatCardActivity"
+            android:label="@string/title_activity_cheat_card" >
+        </activity>
+        <activity
+            android:name=".screens.CreateCardActivity"
+            android:label="@string/title_activity_create_card" >
+        </activity>
+    </application>
+
+</manifest>

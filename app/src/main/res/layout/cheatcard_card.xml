@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="2dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:background="@color/card_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cheatcard_title"
+            android:text="@string/cheatcard_placeholder_title"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_shape"
+            android:layout_below="@+id/cheatcard_title"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/cheatcard_divider"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cheatcard_content"
+            android:text="@string/cheatcard_placeholder_content"
+            android:textSize="12sp"
+            android:textColor="@color/secondary_text"
+            android:layout_below="@id/cheatcard_divider"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="72dp"
+            layout="@layout/codeblock"
+            android:layout_below="@+id/cheatcard_content"
+            android:layout_marginBottom="16dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
