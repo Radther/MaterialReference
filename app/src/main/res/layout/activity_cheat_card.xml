@@ -7,7 +7,7 @@
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="128dp"
+        android:layout_height="112dp"
         android:background="@color/primary"
         android:elevation="4dp"
         android:id="@+id/cheatcard_toolbar">
@@ -16,37 +16,25 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
+                android:text="@string/title"
+                android:textSize="12sp"
+                android:textColor="@color/divider"
                 android:layout_marginLeft="48dp"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="8dp"
-                android:layout_marginRight="56dp"
-                android:hint="@string/title"
-                android:id="@+id/cheatcard_page_title_et"
-                android:enabled="false"
-                app:met_primaryColor="@color/accent"
-                app:met_textColorHint="@color/divider"
-                app:met_baseColor="@color/divider"
-                app:met_textColor="@color/white_text"
-                app:met_floatingLabel="highlight"
-                app:met_floatingLabelAlwaysShown="true"
-                app:met_floatingLabelTextColor="@color/accent"
-                app:met_singleLineEllipsis="true"
-                app:met_maxCharacters="20" />
+                android:layout_marginTop="48dp"
+                android:id="@+id/cheatcard_title_hint"/>
 
-            <ImageButton
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="24dp"
-                android:src="@drawable/ic_check_white_24dp"
-                android:background="@drawable/nothing"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:id="@+id/cheatcard_page_title_check"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder_title"
+                android:textSize="24sp"
+                android:textColor="@color/white_text"
+                android:layout_below="@id/cheatcard_title_hint"
+                android:layout_marginLeft="48dp"
+                android:id="@+id/cheatcard_title_tv"/>
 
         </RelativeLayout>
 

@@ -14,43 +14,11 @@ import ink.designdev.materialreference.R;
 
 public class CheatCardActivity extends ActionBarActivity {
 
-    private MaterialEditText titleET;
-    private ImageButton titleEditCheck;
-    private boolean titleEditMode = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cheat_card);
 
-        titleET = (MaterialEditText)findViewById(R.id.cheatcard_page_title_et);
-        titleEditCheck = (ImageButton)findViewById(R.id.cheatcard_page_title_check);
-
-        editToText();
-
-        titleEditCheck.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                titleEditMode = !titleEditMode;
-                editToText();
-            }
-        });
-
-    }
-
-    private void editToText(){
-        if (titleEditMode){
-            titleET.setHideUnderline(false);
-            titleET.setSingleLineEllipsis(true);
-            titleET.setEnabled(true);
-            titleEditCheck.setImageDrawable(getResources().getDrawable(R.drawable.ic_check_white_24dp));
-        }
-        else {
-            titleET.setHideUnderline(true);
-            titleET.setSingleLineEllipsis(false);
-            titleET.setEnabled(false);
-            titleEditCheck.setImageDrawable(getResources().getDrawable(R.drawable.ic_create_white_24dp));
-        }
     }
 
     @Override
